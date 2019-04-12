@@ -187,19 +187,6 @@ Ejercicio 3: 1. Leer 5 numero por tecaldo.
         }
             
         }
-        
-        
-        
-        
-        
-        
-        
-        
-
-    }
-      
-    
-        
     
  }
     
