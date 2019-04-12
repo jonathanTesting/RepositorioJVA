@@ -97,40 +97,104 @@ Ejercicio 3: 1. Leer 5 numero por tecaldo.
         
         System.out.println("Cantidad de numeros ceros: " +suma_c);
         */
-         
-///
+   
         
-        Scanner entrada = new Scanner(System.in);
+/////Ejercicio 4 1. Leer 10 numero por tecaldo.
+//               2. Almacenarlos en un arreglo.
+//               3. Se deben mostar en el siguiente orden El primero con el ultimo, el segundo con el penultimo
         
-        Integer numeros[] = new Integer[10];
         
-        for(int i=0;i<0xa;i++){
-        System.out.print((i+1)+". Digite un numero:");
-        numeros[i]=entrada.nextInt(); /// aqui gradamos los datos
-        }
-        
-        for (int i = 0, j = numeros.length -1; i <= (numeros.length / 2) && j >= (numeros.length / 2); i++, j--) {
-            System.out.println(numeros[i] + "," + numeros[j]);
-        }
+//        Scanner entrada = new Scanner(System.in);
+//        
+//        Integer numeros[] = new Integer[10];
+//        
+//        for(int i=0;i<0;i++){
+//        System.out.print((i+1)+". Digite un numero:");
+//        numeros[i]=entrada.nextInt(); /// aqui gradamos los datos
+//        }
+//        
+//        for (int i = 0, j = numeros.length -1; j >= (numeros.length / 2) && i <= (numeros.length / 2); i++, j--) {
+//            System.out.println(numeros[i] + "," + numeros[j]);
+//        }
         
         
         
 /// Sacar el numero mayor
         
-        int[] numeros = {0, 200, 3, 4000, 50, 6, 7, 8, 9, 918};
-        int aux = 0;
+//        //int[] numeros = {0, 200, 3, 4000, 50, 6, 7, 8, 9, 918};
+//        int aux = 0;
+//        
+//        for (int i = 0; i < numeros.length; i++) {
+//            
+//                if(i == 0){
+//                    aux = numeros[i];
+//                }else  
+//                    if (aux < numeros[i]) {
+//                    aux = numeros[i];
+//                    }
+//        }
+//        
+//        System.out.println("Mayor es: " + aux);
         
-        for (int i = 0; i < numeros.length; i++) {
+        
+        
+// ///Ejercicio 5: leeer por teclado dos tablas de 10 numeros enteros y mesclarlos en una tercera de la forma:
+//                  el 1º elemento del areglo A
+//                  el 1º elemento del areglo b
+//                  el 2º elemento del areglo A
+//                  el 2º elemento del areglo b
+//                
+        
+       
+        Scanner entrada = new Scanner(System.in);
+        int a[],b[],c[];
+        
+        a= new int[10];
+        b= new int[10];
+        c= new int[20];
+        
+        ///Pedir arerglo a
+        System.out.println("Ingresar arreglo a");
+        for (int i = 0; i < 10; i++) {
+            System.out.print((i+1)+".Digite Numero: ");
+            a[i]= entrada.nextInt();
+        }
+        ///Pedir arerglo b
+        System.out.println("\nDigite segundo arreglo b");
+        for (int i = 0; i < 10; i++) {
+            System.out.print((i+1)+".Digite Numero: ");
+            b[i]= entrada.nextInt();
+        }
+       
+       //Ahora vamosa mezclar  los 2 arreglos  en el  arreglo c
+        
+        int j=0;
+        
+        for (int i = 0; i < 10; i++) {
+            c[j]=a[i];///1ºA 2ºb
+            j++;
+            c[j]=b[i];///1ºB,2ºB
+            j++;
+        }
+     
+           System.out.print("\nEl tercer arregolo es: ");
+        for (int i = 0; i < 20; i++) {
+            System.out.print(c[i]+", ");
             
-                if(i == 0){
-                    aux = numeros[i];
-                }else  
-                    if (aux < numeros[i]) {
-                    aux = numeros[i];
-                    }
+        }
+        System.out.println();
+        
+        }
+            
         }
         
-        System.out.println("Mayor es: " + aux);
+        
+        
+        
+        
+        
+        
+        
 
     }
       
